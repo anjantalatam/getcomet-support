@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Chrome Web Store
+    url: https://chrome.google.com/webstore
+    about: View the extension on Chrome Web Store
+  - name: LinkedIn
+    url: https://linkedin.com/in/anjantalatam
+    about: Connect with the developer on LinkedIn
+  - name: Twitter
+    url: https://twitter.com/anjantalatam
+    about: Follow the developer on Twitter
