@@ -14,10 +14,16 @@ body:
       label: What browser are you using?
       options:
         - Chrome
-        - Edge
-        - Other Chromium-based browser
+        - Other (please specify below)
     validations:
       required: true
+
+  - type: input
+    id: browser-other
+    attributes:
+      label: If you selected "Other", please specify your browser
+      description: Only fill this if you selected "Other" above
+      placeholder: "e.g., Firefox, Safari, etc."
 
   - type: dropdown
     id: os
