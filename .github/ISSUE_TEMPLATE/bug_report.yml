@@ -1,0 +1,82 @@
+name: Bug Report
+description: Report a bug or unexpected behavior
+title: "[Bug] "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to report a bug! Please answer the questions below to help us diagnose the issue.
+
+  - type: dropdown
+    id: browser
+    attributes:
+      label: What browser are you using?
+      options:
+        - Chrome
+        - Edge
+        - Other Chromium-based browser
+    validations:
+      required: true
+
+  - type: dropdown
+    id: os
+    attributes:
+      label: What is your operating system?
+      options:
+        - Windows
+        - Mac
+        - Linux
+        - Other
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: browser-refresh
+    attributes:
+      label: Browser Behavior
+      description: Check if you observe this behavior
+      options:
+        - label: My browser is refreshing every 1 minute when the extension is active
+          required: false
+
+  - type: checkboxes
+    id: visual-indicators
+    attributes:
+      label: Visual Indicators
+      description: Check what you see on Twitter/X search results
+      options:
+        - label: I see red boxes around tweets with claimed invites
+          required: false
+        - label: I see green boxes around tweets with available invites
+          required: false
+        - label: I see gray boxes around tweets with unknown status
+          required: false
+        - label: I don't see any colored boxes around tweets
+          required: false
+
+  - type: textarea
+    id: bug-description
+    attributes:
+      label: Explain your bug in brief
+      description: What's going wrong? What did you expect to happen?
+      placeholder: "Describe the issue you're experiencing..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to Reproduce (if applicable)
+      description: How can we recreate this issue?
+      placeholder: |
+        1. Go to Twitter/X
+        2. Search for Comet invites
+        3. Notice that...
+
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: Additional Context
+      description: Any other details, screenshots, or console errors that might help
+      placeholder: "Add any other context about the problem here"
